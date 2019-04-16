@@ -6,7 +6,7 @@ describe("Problem 1 testing...", () => {
   let checker;
 
   beforeEach(() => {
-    checker = new Problem1(3, 5, 1000);
+    checker = new Problem1(3, 5, 10);
   });
 
   it("should pass this test", () => {
@@ -25,6 +25,9 @@ describe("Problem 1 testing...", () => {
   it("should return true, when passed a value divided by 3 and 5", () => {
     expect(checker.isMultiplierOfLimiter(15)).to.eql(true);
   }); 
+
+  it("should return 23, when passed a multipliers of 3 and 5 with a limiter of 10", () => {
+    expect(checker.sumMultiples()).to.eql(23);
   });
 
 });
