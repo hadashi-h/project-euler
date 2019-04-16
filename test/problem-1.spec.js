@@ -6,7 +6,7 @@ describe("Problem 1 testing...", () => {
   let checker;
  
   beforeEach(() => {
-    checker = new Problem1();
+    checker = new Problem1(3,5,1000);
   });
  
   it("should pass this test", () =>{
