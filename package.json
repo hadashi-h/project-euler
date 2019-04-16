@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-register"
+    "test": "mocha --require babel-register",
+    "build": "babel --presets es2015 -d dist/ src",
+    "start": "npm run build && npm run test && node dist/results.js "
   },
   "repository": {
     "type": "git",
