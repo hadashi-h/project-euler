@@ -6,4 +6,24 @@ export class Problem1 {
         this.multiplier2 = multiplier2;
         this.below = below;
     };
+ 
+
+    isMultipleOf(val) {
+        if (val % this.multiplier1 == 0 || val % this.multiplier2 == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    sumValues() {
+        var sum = 0;
+        for (var i = 0; i < this.below; i++) {
+            if (this.isMultipleOf(i)) {
+                sum = sum + i;
+            }
+        }
+        return sum;
+    }
 } 
